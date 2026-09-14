@@ -16,7 +16,7 @@ That is all it holds. The application source is private and stays private.
   "name": "Achievement Point Tracker",
   "version": "0.5.0",
   "release_date": "2026-09-14",
-  "release_url": "https://github.com/asx2asc/Points-Releases/releases/latest",
+  "release_url": "https://github.com/asx2asc/Points-Releases",
   "notes": "Clean school deployment package for v0.5.0.",
   "min_python": "3.10"
 }
@@ -37,13 +37,18 @@ application and can copy a pre-formatted request to send to you. It never instal
 by itself and never interrupts work in progress — a teacher can carry on with the version
 they have.
 
-Release packages are attached to the [releases](../../releases) of this repository.
+**The release package is not published here.** The application source is private, and a
+school deployment is plain Python source, so attaching it would publish the source along
+with it. Obtain the package from whoever supplied the software.
+
+This repository answers *whether* an update exists. It is deliberately not how the update
+is distributed.
 
 ## Publishing a new version
 
 1. Update the application's version in `pyproject.toml`.
 2. Run `python package_school_release.py`, which writes a matching `version.json`.
-3. Commit that file here and push, then attach the release package to a new release.
+3. Commit that file here and push.
 
 `version.json` must be updated **at the same time as** the release it describes. A feed
 advertising a version that has not been published tells every school to ask their IT
