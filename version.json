@@ -1,12 +1,13 @@
 {
   "name": "Merit Tracker",
   "version": "0.5.0",
-  "build": "44cea2168b07",
+  "build": "90ab5419a8b2",
   "release_date": "2026-11-09",
   "release_url": "https://github.com/asx2asc/Points-Releases",
-  "notes": "Clean school deployment package for v0.5.0 (build 44cea2168b07).",
+  "notes": "Clean school deployment package for v0.5.0 (build 90ab5419a8b2).",
   "min_python": "3.7.3",
   "previous_builds": [
+    "44cea2168b07",
     "368ddf56329b"
   ],
   "tests": "The fast tier of tests passed on this copy before it was packaged."
