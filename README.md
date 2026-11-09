@@ -1,4 +1,4 @@
-# Achievement Point Tracker — public version feed
+# Merit Tracker — public version feed
 
 This repository exists so that a school computer can answer one question without any
 credentials, any Git client, and any access to the private source repository:
@@ -13,19 +13,26 @@ That is all it holds. The application source is private and stays private.
 
 ```json
 {
-  "name": "Achievement Point Tracker",
+  "name": "Merit Tracker",
   "version": "0.5.0",
-  "release_date": "2026-09-14",
+  "build": "44cea2168b07",
+  "release_date": "2026-11-09",
   "release_url": "https://github.com/asx2asc/Points-Releases",
-  "notes": "Clean school deployment package for v0.5.0.",
-  "min_python": "3.10"
+  "notes": "Clean school deployment package for v0.5.0 (build 44cea2168b07).",
+  "min_python": "3.7.3",
+  "previous_builds": [
+    "368ddf56329b"
+  ],
+  "tests": "The fast tier of tests passed on this copy before it was packaged."
 }
 ```
 
 The application fetches it over plain HTTPS from
 `https://raw.githubusercontent.com/asx2asc/Points-Releases/main/version.json` and compares
-`version` against the version it is running. Nothing is sent: the request carries no
-identifying information beyond a user agent, and no telemetry is collected.
+`version` and `build` against the copy it is running. `previous_builds` lists the earlier
+builds of the same version that this one replaces, so a copy of one of those is told there
+is an update. Nothing is sent: the request carries no identifying information beyond a user
+agent, and no telemetry is collected.
 
 **No pupil data, no school data and no register information is published here, and none
 ever should be.** This feed is application metadata only.
