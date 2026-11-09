@@ -15,12 +15,13 @@ That is all it holds. The application source is private and stays private.
 {
   "name": "Merit Tracker",
   "version": "0.5.0",
-  "build": "90ab5419a8b2",
+  "build": "1f4329192700",
   "release_date": "2026-11-09",
   "release_url": "https://github.com/asx2asc/Points-Releases",
-  "notes": "Clean school deployment package for v0.5.0 (build 90ab5419a8b2).",
+  "notes": "Clean school deployment package for v0.5.0 (build 1f4329192700).",
   "min_python": "3.7.3",
   "previous_builds": [
+    "90ab5419a8b2",
     "44cea2168b07",
     "368ddf56329b"
   ],
